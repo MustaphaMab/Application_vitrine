@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/inscription.css" />
+    <title>inscription</title>
+  </head>
+  <main>
+    <body>
+      <div class="divHeader">
+        <div class="sousDivHeader">
+          <nav class="nav">
+            <div class="menu_burger">
+              <div><a href=".//index.html">Page principale</a></div>
+
+              <div><a href="./marques-pages.html">Marques pages</a></div>
+              <div>
+                <a href=".//mugs.html">Mugs</a>
+              </div>
+              <div>
+                <a href="./portes-clé.html">Portes-cles</a>
+              </div>
+              <div><a href="./t-shirt.html"> T-shirt</a></div>
+            </div>
+          </nav>
+          <h1 class="titre_header">SA SA K-KO</h1>
+          <p>A portée de mains</p>
+        </div>
+      </div>
+
+      <form action="/register" method="post">
+        <fieldset class="fieldset">
+          <h3>Inscription</h3>
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="newUsername">Prénom :</label>
+          <input type="text" id="newUsername" name="newUsername" required />
+
+          <label for="Password"> Mot de passe :</label>
+          <input type="password" id="newPassword" name="newPassword" required />
+
+          <label for="newPassword"> Saisir à nouveau le mot de passe :</label>
+          <input type="password" id="newPasswordBis" name="newPasswordBis" />
+
+          <label for="phone"> Téléphone :</label>
+          <input
+            type="number"
+            id="telephone"
+            name="telephone"
+            required
+            pattern="[0-9]{10}"
+          />
+
+          <label for="adresse"> Adresse :</label>
+          <input type="text" id="adresse" name="adresse" required />
+
+          <label for="ville"> Ville :</label>
+          <input type="text" id="ville" name="ville" required />
+
+        
+        </fieldset>
+        <input type="submit" value="S'inscrire" />
+      </form>
+    </body>
+  </main>
+</html>

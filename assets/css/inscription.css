@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+    margin: 0; /* Ajout de cette ligne pour enlever la marge par défaut du corps de la page */
+}
+
+.nav {
+    margin-top: 20px;
+    text-align: center; /* Centrer les liens dans le menu burger */
+}
+
+.menu_burger {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu_burger a {
+    text-decoration: none;
+    color: #ecf0f1;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu_burger a:hover {
+    background-color: #3498db;
+}
+
+.divHeader {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.titre_header {
+    font-size: 2.5rem;
+    color: #e74c3c;
+}
+
+fieldset {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Centrer le formulaire */
+    padding: 20px;
+    max-width: 400px; /* Limiter la largeur du formulaire */
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: #333;
+}
+
+input {
+    width: calc(100% - 20px); /* Utiliser calc() pour tenir compte de la bordure et de la marge du formulaire */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
